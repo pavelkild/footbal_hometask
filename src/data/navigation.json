@@ -1,0 +1,5 @@
+[
+    {"label": "Главная", "link": "/", "component": "<Main/>"},
+    {"label": "Лиги", "link": "/leagues", "component": "<LeagueList/>"},
+    {"label": "Команды", "link": "/teams", "component": "<TeamList/>"}
+]

@@ -1,0 +1,49 @@
+header nav, header .brick {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav a {
+    font: inherit;
+    height: var(--header-height);
+    line-height: var(--header-height);
+    width: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--header-menu-back-color);
+    margin-left: 2px;
+    font-size: .85em;
+    position: relative;
+}
+
+header nav a:hover, 
+header nav a.active {
+    color: var(--link-active-color);
+}
+
+header nav a.active:before,
+header nav a.active:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -15px;
+    border-bottom: 15px solid transparent;
+}
+
+header nav a.active:before {
+    left: -130px;
+    border-right: 65px solid var(--header-menu-back-color);
+}
+
+header nav a.active:after {
+    left: 65px;
+    border-left: 65px solid var(--header-menu-back-color);
+}
+
+header img.logoImage {
+    height: calc(var(--header-height) + var(--common-padding));
+    margin: 0 calc(-1 * var(--common-padding)) calc(-1 * var(--common-padding)) 0px;
+    z-index: 1;
+    position: relative;
+}

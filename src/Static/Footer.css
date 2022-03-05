@@ -1,0 +1,11 @@
+footer nav a {
+    font: inherit;
+    padding: 0px 15px;
+    font-size: .85em;
+    position: relative;
+}
+
+footer nav, footer .brick {
+    display: inline-block;
+    vertical-align: middle;
+}

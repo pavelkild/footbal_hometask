@@ -1,0 +1,23 @@
+#breadCrumbs {
+    font-size: small;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+#breadCrumbs nav a {
+    display: inline-block;
+    padding: 2px;
+    text-decoration: underline;
+    padding-right: 5px;
+    position: relative;
+    margin-right: 15px;
+}
+
+#breadCrumbs nav a:after {
+    content: " > ";
+    position: absolute;
+    right: -10px;
+    top: 2px;
+}
+
+#breadCrumbs nav a:nth-last-child(1):after { display: none; }
